@@ -2,9 +2,12 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Department Form</title>
 </head>
 <body>
+<h1>
+    Melak Solutions: Employee Database
+</h1>
 <h2>Add New Employee</h2>
 <form action="#" th:action="@{/addEmployee}" th:object="${employee}" method="post">
 
@@ -17,7 +20,7 @@
 </select>
     Employee Name: <input type="text" name="name" th:field="*{name}"/>
 
-    JobTitle: <input type="text" name="jobTitle" th:field="*{jobTitle}"/>
+    Job Title: <input type="text" name="jobTitle" th:field="*{jobTitle}"/>
 
 <input type="submit" value="Submit"/>
 </form>

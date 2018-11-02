@@ -2,14 +2,19 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Department List</title>
 </head>
 <body>
+<h1>
+    Melak Solutions: Employee Database
+</h1>
 <h2>Department List</h2>
+<table>
+    <tr><strong>Department Name:</strong></tr>
 
-<div th:each="department : ${departments}">
-    <span th:text="${department.name}"></span>
-</div>
-
+    <tr th:each="department : ${departments}">
+        <td><span th:inline="text">[[ ${department.name}]]</span></td>
+    </tr>
+</table>
 </body>
 </html>
